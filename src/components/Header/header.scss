@@ -1,0 +1,91 @@
+.header {
+
+  .customLink {
+    color: white;
+    text-decoration: none;
+    padding: 0px 15px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: cyan;
+    }
+
+    &.active {
+      color: cyan;
+    }
+  }
+
+  .spanHello {
+    margin-right: 30px;
+    color: white;
+  }
+
+  .activeLang {
+    text-transform: uppercase;
+    color: cyan;
+  }
+
+  .dropdownButton{
+    background-color: #262626;
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+    &:hover {
+      color: cyan;
+    }
+  }
+
+  .dropdownMenu {
+    width: 80px;
+    background-color: #262626;
+
+    .dropdownItem {
+      display: block;
+      width: 100%;
+      padding: .25rem 1rem;
+      color: white;
+      text-align: inherit;
+      background-color: #262626;
+      border: none;
+
+      &:hover {
+        background-color: #262626;
+        color: cyan;
+      }
+    }
+
+  }
+
+  .singOutButton {
+    background-color: #262626;
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+    &:hover {
+      color: cyan;
+    }
+  }
+
+  .headerLogo {
+    padding-left: 30px;
+    color: white;
+    width: 20%;
+    text-transform: uppercase;
+
+    &:hover {
+      color: cyan;
+    }
+  }
+
+  .headerItems {
+    width: 20%;
+  }
+
+}
+.bg-dark {
+  background-color: black !important;
+}

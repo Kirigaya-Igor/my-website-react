@@ -1,0 +1,31 @@
+.mainPage {
+  min-height: calc( 100vh - 116px );
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+
+  .mainPageTitle {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .mainPagePhoto {
+    width: 350px;
+    opacity: 90%;
+    border-radius: 200px;
+  }
+
+  .mainPageText {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+    .customLink {
+      color: deeppink;
+      text-decoration: none;
+    }
+  }
+}

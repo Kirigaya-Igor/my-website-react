@@ -1,0 +1,50 @@
+.contactPage {
+  min-height: calc(100vh - 116px);
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .emptyContactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      color: white;
+    }
+
+    h4 {
+      color: white;
+    }
+  }
+
+  .redText {
+    color: red;
+  }
+
+  .textColor {
+    color: white;
+  }
+
+  .btnColor {
+    color: cyan;
+  }
+
+  textarea {
+    height: 150px;
+    min-height: 100px;
+  }
+
+  .customField {
+    background-color: #333333;
+    border: black;
+    color: white;
+
+    &::-webkit-input-placeholder {
+      color: white;
+      opacity: 80%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.RegistrationPage {
+  min-height: calc(100vh - 116px);
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .redText {
+    color: red;
+  }
+
+  .textColor {
+    color: white;
+  }
+
+  .btnColor {
+    color: cyan;
+  }
+
+  .customField {
+    background-color: #333333;
+    border: black;
+    color: white;
+
+    &::-webkit-input-placeholder {
+      color: white;
+      opacity: 80%;
+    }
+  }
+}
