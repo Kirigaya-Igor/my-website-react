@@ -1,6 +1,6 @@
 import React from 'react';
 import './app.scss'
-import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
+import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
 import {DataPage} from './components/DataPage/DataPage';
 import {Header} from "./components/Header/Header";
 import {MainPage} from "./components/MainPage/MainPage";
@@ -18,7 +18,7 @@ function App() {
         <div>
             <AlertState>
                 <AuthProvider>
-                    <BrowserRouter>
+                    <HashRouter>
                         <Header/>
                         <Alert/>
                         <Switch>
@@ -30,7 +30,7 @@ function App() {
                             <Redirect to={"/aboutMe"}/>
                         </Switch>
                         <Footer/>
-                    </BrowserRouter>
+                    </HashRouter>
                 </AuthProvider>
             </AlertState>
         </div>
