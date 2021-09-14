@@ -18,7 +18,7 @@ function App() {
         <div>
             <AlertState>
                 <AuthProvider>
-                    <HashRouter>
+                        <HashRouter>
                         <Header/>
                         <Alert/>
                         <Switch>

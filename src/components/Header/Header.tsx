@@ -15,6 +15,7 @@ export const Header: React.FC = () => {
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
         SetActLang(lang);
+        console.log(i18n.language)
     }
 
     return (
