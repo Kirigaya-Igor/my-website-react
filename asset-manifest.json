@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/my-website-react/static/css/main.67ebc48c.chunk.css",
-    "main.js": "/my-website-react/static/js/main.19142266.chunk.js",
-    "main.js.map": "/my-website-react/static/js/main.19142266.chunk.js.map",
+    "main.css": "/my-website-react/static/css/main.12ef3717.chunk.css",
+    "main.js": "/my-website-react/static/js/main.4a6d8b91.chunk.js",
+    "main.js.map": "/my-website-react/static/js/main.4a6d8b91.chunk.js.map",
     "runtime-main.js": "/my-website-react/static/js/runtime-main.0b40d3d2.js",
     "runtime-main.js.map": "/my-website-react/static/js/runtime-main.0b40d3d2.js.map",
-    "static/js/2.cfbe3193.chunk.js": "/my-website-react/static/js/2.cfbe3193.chunk.js",
-    "static/js/2.cfbe3193.chunk.js.map": "/my-website-react/static/js/2.cfbe3193.chunk.js.map",
+    "static/js/2.0f2a7e26.chunk.js": "/my-website-react/static/js/2.0f2a7e26.chunk.js",
+    "static/js/2.0f2a7e26.chunk.js.map": "/my-website-react/static/js/2.0f2a7e26.chunk.js.map",
     "index.html": "/my-website-react/index.html",
-    "static/css/main.67ebc48c.chunk.css.map": "/my-website-react/static/css/main.67ebc48c.chunk.css.map",
-    "static/js/2.cfbe3193.chunk.js.LICENSE.txt": "/my-website-react/static/js/2.cfbe3193.chunk.js.LICENSE.txt",
+    "static/css/main.12ef3717.chunk.css.map": "/my-website-react/static/css/main.12ef3717.chunk.css.map",
+    "static/js/2.0f2a7e26.chunk.js.LICENSE.txt": "/my-website-react/static/js/2.0f2a7e26.chunk.js.LICENSE.txt",
     "static/media/firebase.362c49e1.png": "/my-website-react/static/media/firebase.362c49e1.png",
     "static/media/formik.9112cd9b.png": "/my-website-react/static/media/formik.9112cd9b.png",
     "static/media/i18next.3a5d0938.png": "/my-website-react/static/media/i18next.3a5d0938.png",
     "static/media/myPhoto.74cee90a.png": "/my-website-react/static/media/myPhoto.74cee90a.png",
     "static/media/reactlogo.3b091593.png": "/my-website-react/static/media/reactlogo.3b091593.png",
-    "static/media/spinner.c4a0bf72.svg": "/my-website-react/static/media/spinner.c4a0bf72.svg",
+    "static/media/spinner.583e7e3a.svg": "/my-website-react/static/media/spinner.583e7e3a.svg",
     "static/media/typescript.3e4cdc40.png": "/my-website-react/static/media/typescript.3e4cdc40.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0b40d3d2.js",
-    "static/js/2.cfbe3193.chunk.js",
-    "static/css/main.67ebc48c.chunk.css",
-    "static/js/main.19142266.chunk.js"
+    "static/js/2.0f2a7e26.chunk.js",
+    "static/css/main.12ef3717.chunk.css",
+    "static/js/main.4a6d8b91.chunk.js"
   ]
 }
