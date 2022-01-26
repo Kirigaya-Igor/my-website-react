@@ -46,7 +46,7 @@ export const DataItem: React.FC<DataItemType> = ({ myData, receiveNewItem, recei
                                     <div className='d-flex justify-content-end align-items-center'>
                                         {/* <span className='textColor'>{item.content}</span> */}
                                         {item.content.slice(0, 7) === 'http://' || item.content.slice(0, 8) === 'https://' ?
-                                            <a href={`${item.content}`} target="_blank" className='linkItem'>{item.content}</a>
+                                            <a href={`${item.content}`} target="_blank" rel="noreferrer" className='linkItem'>{item.content}</a>
                                             :
                                             <span className="textColor">{item.content}</span>
                                         }
