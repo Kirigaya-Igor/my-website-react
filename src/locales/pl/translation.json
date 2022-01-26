@@ -31,7 +31,7 @@
     "title": "Witam, nazywam się Igor.",
     "subtitle": "Jestem junior frontend developerem (React developer).",
     "mainPageTextTitle": "Kilka informacji o mnie:",
-    "mainPageText": "W tym roku skończyłem studia informatyczne, po czym zacząłem poważnie uczyć się JavaScript i React.js. W tej chwili dość dobrze znam React i chcę dalej się rozwijać w tym kierunku. Staram się pracować z najnowszymi technologiami, więc używam React hooks, ale mogę też używać Redux. Więcej informacji o moich umiejętnościach znajdziesz na stronie:"
+    "mainPageLinkText": "Więcej informacji o moich umiejętnościach znajdziesz na stronie:"
   },
 
   "contactPage": {

@@ -1,12 +1,12 @@
-import React, {useContext, useEffect, useState} from "react";
-import {DataItem} from "../DataItem/DataItem";
-import {ApiDataType, appAPI} from "../../API/appAPI";
-import {Loader} from "../../Loader/Loader";
+import React, { useContext, useEffect, useState } from "react";
+import { DataItem } from "../DataItem/DataItem";
+import { ApiDataType, appAPI } from "../../API/appAPI";
+import { Loader } from "../../Loader/Loader";
 import { newItemType } from "../../common/generalTypes";
-import {useAuthState} from "react-firebase-hooks/auth";
-import {firebaseInit} from "../../firebase/firebaseInit";
-import {useTranslation} from "react-i18next";
-import {AlertContext} from "../../alert/alertState";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { firebaseInit } from "../../firebase/firebaseInit";
+import { useTranslation } from "react-i18next";
+import { AlertContext } from "../../alert/alertState";
 
 export const PersonalData: React.FC = () => {
 
@@ -15,9 +15,9 @@ export const PersonalData: React.FC = () => {
     const [newItem, setNewItem] = useState<Array<newItemType>>([])
     const [deleteItem, setDeleteItem] = useState<string>('')
     const [user] = useAuthState(firebaseInit.auth());
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
     // @ts-ignore
-    const {showAlert} = useContext(AlertContext);
+    const { showAlert } = useContext(AlertContext);
 
     const receiveNewItem = (newItem: Array<newItemType>) => {
         setNewItem(newItem)
@@ -30,7 +30,7 @@ export const PersonalData: React.FC = () => {
     useEffect(() => {
         appAPI.fetchItems(i18n.language, 'personalData', showAlert)
             .then((data) => {
-                if(data){
+                if (data) {
                     setMyData(data)
                 }
                 setIsLoading(false)
@@ -42,7 +42,7 @@ export const PersonalData: React.FC = () => {
     }, [i18n.language])
 
     useEffect(() => {
-        if(user && newItem.length !== 0){
+        if (user && newItem.length !== 0) {
             const item = {
                 reviewId: user.uid,
                 title: newItem[0].title,
@@ -50,12 +50,12 @@ export const PersonalData: React.FC = () => {
             }
 
             appAPI.addItem(item, i18n.language, 'personalData', showAlert)
-                .then((res => setMyData([...myData, {...item, id: res}])))
+                .then((res => setMyData([...myData, { ...item, id: res }])))
         }
     }, [newItem])
 
     useEffect(() => {
-        if(deleteItem !== ''){
+        if (deleteItem !== '') {
             appAPI.removeItem(deleteItem, i18n.language, 'personalData', showAlert)
                 .then(() => setMyData(myData.filter(item => item.id !== deleteItem)))
         }
@@ -64,8 +64,8 @@ export const PersonalData: React.FC = () => {
     return (
         <div className='row customBorder'>
             <h3 className='col-12 text-white text-uppercase d-flex justify-content-center mb-4 mt-3'>{t("personalData.title")}</h3>
-            {isLoading ? <Loader/> : <DataItem myData={myData} receiveNewItem={receiveNewItem}
-                                               receiveDeleteItem={receiveDeleteItem}/>}
+            {isLoading ? <Loader /> : <DataItem myData={myData} receiveNewItem={receiveNewItem}
+                receiveDeleteItem={receiveDeleteItem} />}
         </div>
     )
 }

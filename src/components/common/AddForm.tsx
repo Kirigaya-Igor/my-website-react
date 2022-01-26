@@ -12,8 +12,8 @@ type AddFormType = {
 export const AddForm: React.FC<AddFormType> = ({setNewItem}) => {
 
     const validationSchema = Yup.object({
-        title: Yup.string().required('The field "Email" is required'),
-        content: Yup.string().required('The field "Password" is required')
+        title: Yup.string().required('The field "Title" is required'),
+        content: Yup.string().required('The field "Content" is required')
     })
 
     return (
