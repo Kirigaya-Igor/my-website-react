@@ -44,9 +44,14 @@ export const DataItem: React.FC<DataItemType> = ({ myData, receiveNewItem, recei
                                 </div>
                                 <div className='col-6 textColor d-flex justify-content-end flex-wrap text-break'>
                                     <div className='d-flex justify-content-end align-items-center'>
-                                        <span className='textColor'>{item.content}</span>
+                                        {/* <span className='textColor'>{item.content}</span> */}
+                                        {item.content.slice(0, 7) === 'http://' || item.content.slice(0, 8) === 'https://' ?
+                                            <a href={`${item.content}`} target="_blank" className='linkItem'>{item.content}</a>
+                                            :
+                                            <span className="textColor">{item.content}</span>
+                                        }
                                         {user && admin === user.uid ?
-                                            <button type="button" className="btn btn-danger btn-sm" style={{ marginLeft: '30px' }}
+                                            <button type="button" className="btn btn-danger btn-sm" style={{ marginLeft: '30px', minWidth: '60px', maxHeight: '40px' }}
                                                 onClick={() => receiveDeleteItem(item.id)}>delete</button>
                                             :
                                             <div></div>
